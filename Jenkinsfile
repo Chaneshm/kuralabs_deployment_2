@@ -26,6 +26,7 @@ pipeline {
           junit 'test-reports/results.xml'
         }
       }
+    }
        stage ('Deploy') {
             steps {
             sh '''
