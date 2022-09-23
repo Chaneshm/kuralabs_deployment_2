@@ -27,7 +27,10 @@ pipeline {
         }
        stage ('Deploy') {
             steps {
-            sh '/var/lib/jenkins/.local/bin/eb deploy deployment2'
+            sh '''
+            cd /var/workspace/kuralabs_deployment_2
+            sudo eb deploy deployment2-dev
+            '''
         }
       }
     }
