@@ -30,9 +30,9 @@ pipeline {
        stage ('Deploy') {
             steps {
             sh '''
-            echo "admin" | sudo -S su
-            cd /var/workspace/kuralabs_deployment_2
-            sudo eb deploy deployment2-dev
+            
+            eb deploy dev2-dev
+            
             '''
         }
       }
