@@ -31,7 +31,7 @@ pipeline {
             steps {
             sh '''
             
-            eb deploy dev2-dev
+            /var/lib/jenkins/.local/bin/eb deploy dep2-dev
             
             '''
         }
